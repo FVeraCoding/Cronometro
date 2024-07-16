@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+    font-size: 62.5%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contenedor-principal{
+    width: 60%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    background-color: white;
+}
+
+@media (min-width:440px){ 
+    .contenedor-principal{
+        width: 70%;
+        height: 35%;
+    }
+}
+
+@media (min-width:769px){ 
+    .contenedor-principal{
+        width: 40%;
+        height: 40%;
+    }
+}
+
+#cronometro{
+    font-size: 3rem;
+}
+
+@media (min-width:440px){ 
+    #cronometro{
+        font-size: 5rem;
+    }
+}
+
+@media (min-width:769px){ 
+    #cronometro{
+        font-size: 6rem;
+    }
+}
+
+#cronometro span{
+    font-size: 3rem;
+}
+
+.contenedor-botones{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+@media (min-width:440px){ 
+    .contenedor-botones{
+        flex-direction: row;
+        gap: 8rem;
+    }
+}
+
+@media (min-width:769px){ 
+    .contenedor-botones{
+        flex-direction: row;
+        gap: 10rem;
+    }
+}
+
+.boton{
+    width: 14rem;
+    height: 10rem;
+    cursor: pointer;
+    border: 3px solid black;
+}
+
+@media (min-width:440px){ 
+    .boton{
+        width: 12rem;
+        height: 10rem;
+    }
+}
+
+@media (min-width:769px){ 
+    .boton{
+        width: 14rem;
+        height: 10rem;
+    }
+}
+
+
+
+.boton.iniciar{
+    background-color: rgb(44, 244, 44);
+}
+
+.boton.pausar{
+    background-color: rgb(227, 227, 38);
+}
+
+#boton-reiniciar{
+    background-color: red;
+}
+
+.boton img{
+    width: 30%;
+    height: 50%;
+}
+
+#centesimas{
+    font-size: 1.2rem;
+}
